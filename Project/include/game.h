@@ -33,12 +33,12 @@ void checkWin(sf::RectangleShape &result, sf::RectangleShape &bg, sf::Text &text
             if (Pturn == 0)
             {
                 text.setString("You Lose!");
-                mB.whoLose = 0;
+                mB.whoLose = 2;
             }
             else
             {
                 text.setString("You Win!");
-                mB.whoLose = 0;
+                mB.whoLose = 2;
             }
             text.setPosition(result.getPosition().x + result.getSize().x / 2 - text.getGlobalBounds().width / 2, result.getPosition().y + result.getSize().y / 2 - text.getGlobalBounds().height);
             result.setFillColor(sf::Color{7, 242, 129, 255});
